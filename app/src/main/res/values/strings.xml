@@ -2,4 +2,15 @@
     <string name="app_name">Initiative</string>
     <string name="dice_hint">Amount of Dice</string>
     <string name="roll_button">Roll!</string>
+    <string name="name_hint">Name</string>
+    <string name="strength_label">Strength</string>
+    <string name="saving_throw_label">Saving Throws</string>
+    <string name="skills_label">Skills</string>
+    <string name="dexterity_label">Dexterity</string>
+    <string name="constitution_label">Constitution</string>
+    <string name="intelligence_label">Intelligence</string>
+    <string name="wisdom_label">Wisdom</string>
+    <string name="charisma_label">Charisma</string>
+    <string name="equipment_label">Inventory and Equipment</string>
+    <string name="roll_stats_button">Roll For Stats</string>
 </resources>
