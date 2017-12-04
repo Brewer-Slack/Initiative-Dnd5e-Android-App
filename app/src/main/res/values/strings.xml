@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Initiative</string>
+    <string name="dice_hint">Amount of Dice</string>
+    <string name="roll_button">Roll!</string>
+</resources>
