@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DiceRollActivity" />
-        <activity android:name=".CharacterActivity"></activity>
+        <activity android:name=".CharacterActivity"/>
     </application>
 
 </manifest>

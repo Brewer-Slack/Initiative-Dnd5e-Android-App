@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/createNewCharacter"
         android:title="@string/menu_create_character"
         android:icon="@drawable/ic_add_white_24dp"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
     <item
+        android:id="@+id/editCurrentCharacter"
+        android:title="@string/menu_edit_character"
+        android:icon="@drawable/ic_mode_edit_white_24dp"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menuRoll"
+        android:title="@string/menu_roll"
+        android:icon="@drawable/ic_gradient_white_24dp"
+        app:showAsAction="always"
+        />
 
 </menu>

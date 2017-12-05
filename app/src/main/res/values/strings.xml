@@ -3,9 +3,9 @@
     <string name="dice_hint">Amount of Dice</string>
     <string name="roll_button">Roll!</string>
     <string name="name_hint">Name</string>
-    <string name="strength_label">Strength</string>
     <string name="saving_throw_label">Saving Throws</string>
     <string name="skills_label">Skills</string>
+    <string name="strength_label">Strength</string>
     <string name="dexterity_label">Dexterity</string>
     <string name="constitution_label">Constitution</string>
     <string name="intelligence_label">Intelligence</string>
@@ -14,4 +14,9 @@
     <string name="equipment_label">Inventory and Equipment</string>
     <string name="roll_stats_button">Roll For Stats</string>
     <string name="menu_create_character">Create New Character</string>
+    <string name="menu_edit_character">Edit Current Character</string>
+    <string name="menu_roll">Roll</string>
+    <string name="current_character">Current Character</string>
+    <string name="inventory">Inventory</string>
+    <string name="class_name">Class</string>
 </resources>
