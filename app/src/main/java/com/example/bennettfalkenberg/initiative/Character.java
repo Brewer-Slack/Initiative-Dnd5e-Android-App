@@ -94,4 +94,9 @@ public class Character {
     public int getWisdom() {return wisdom;}
 
     public void setWisdom(int wisdom) {this.wisdom = wisdom;}
+
+    @Override
+    public String toString() {
+        return this.getName();
+    }
 }

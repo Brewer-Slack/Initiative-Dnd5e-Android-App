@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -22,11 +24,33 @@ public class CharacterActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
         Button rollStatsButton = (Button) findViewById(R.id.statsButton);
+        EditText strengthValue = (EditText) findViewById(R.id.strengthValue);
+        EditText dexterityValue = (EditText) findViewById(R.id.dexterityValue);
+        EditText constitutionValue = (EditText) findViewById(R.id.constitutionValue);
+        EditText intelligenceValue = (EditText) findViewById(R.id.intelligenceValue);
+        EditText wisdomValue = (EditText) findViewById(R.id.wisdomValue);
+        EditText charismaValue = (EditText) findViewById(R.id.charismaValue);
+
+        // we're editing a character
         if(intent.getIntExtra("requestCode", 0) == 2){
             rollStatsButton.setVisibility(View.INVISIBLE);
+            strengthValue.setInputType(InputType.TYPE_CLASS_NUMBER);
+            dexterityValue.setInputType(InputType.TYPE_CLASS_NUMBER);
+            constitutionValue.setInputType(InputType.TYPE_CLASS_NUMBER);
+            intelligenceValue.setInputType(InputType.TYPE_CLASS_NUMBER);
+            wisdomValue.setInputType(InputType.TYPE_CLASS_NUMBER);
+            charismaValue.setInputType(InputType.TYPE_CLASS_NUMBER);
+
         }
+        // we're creating a new character
         else if(intent.getIntExtra("requestCode", 0) == 1){
             rollStatsButton.setVisibility(View.VISIBLE);
+            strengthValue.setInputType(InputType.TYPE_NULL);
+            dexterityValue.setInputType(InputType.TYPE_NULL);
+            constitutionValue.setInputType(InputType.TYPE_NULL);
+            intelligenceValue.setInputType(InputType.TYPE_NULL);
+            wisdomValue.setInputType(InputType.TYPE_NULL);
+            charismaValue.setInputType(InputType.TYPE_NULL);
         }
     }
 
@@ -44,15 +68,15 @@ public class CharacterActivity extends AppCompatActivity {
 
     public void onRollStatsClicked(View view){
         // get references to all 6 data fields
-        TextView strengthText = (TextView) findViewById(R.id.strengthValue);
-        TextView dexterityText = (TextView) findViewById(R.id.dexterityValue);
-        TextView constitutionText = (TextView) findViewById(R.id.constitutionValue);
-        TextView intelligenceText = (TextView) findViewById(R.id.intelligenceValue);
-        TextView wisdomText = (TextView) findViewById(R.id.wisdomValue);
-        TextView charismaText = (TextView) findViewById(R.id.charismaValue);
+        EditText strengthText = (EditText) findViewById(R.id.strengthValue);
+        EditText dexterityText = (EditText) findViewById(R.id.dexterityValue);
+        EditText constitutionText = (EditText) findViewById(R.id.constitutionValue);
+        EditText intelligenceText = (EditText) findViewById(R.id.intelligenceValue);
+        EditText wisdomText = (EditText) findViewById(R.id.wisdomValue);
+        EditText charismaText = (EditText) findViewById(R.id.charismaValue);
         Dice dice = new Dice(6,4);
 
-        ArrayList<TextView> textViewArrayList = new ArrayList<>();
+        ArrayList<EditText> textViewArrayList = new ArrayList<>();
         textViewArrayList.add(strengthText);
         textViewArrayList.add(dexterityText);
         textViewArrayList.add(constitutionText);
