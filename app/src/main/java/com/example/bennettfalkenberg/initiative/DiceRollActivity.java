@@ -55,6 +55,7 @@ public class DiceRollActivity extends AppCompatActivity implements SensorEventLi
 
     public void onRollClick(View view) {
         EditText diceText = (EditText) findViewById(R.id.amountOfDice);
+        EditText modifierValue = (EditText) findViewById(R.id.modifierValue);
         String amountDiceStr = diceText.getText().toString();
         int amountDice = Integer.parseInt(amountDiceStr);
 
@@ -66,7 +67,8 @@ public class DiceRollActivity extends AppCompatActivity implements SensorEventLi
         dice.setNumDice(amountDice);
         dice.setNumSides(dieType);
 
-        int result = dice.rollDice();
+        int modifier = Integer.parseInt(modifierValue.getText().toString());
+        int result = dice.rollDice(modifier);
         TextView resultText = (TextView) findViewById(R.id.rollResult);
         resultText.setText(Integer.toString(result));
     }

@@ -10,13 +10,40 @@
     android:background="@color/colorBackground">
 
 
-    <Spinner
-        android:id="@+id/reasonSpinner"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/modifierText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_columnSpan="1"
+        android:layout_column="0"
+        android:layout_row="0"
         android:layout_columnWeight="1"
-        android:layout_row="0"/>
+        android:text="@string/modifier"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/diceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_columnWeight="1"
+        android:text="@string/dice_amount"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/modifierValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:gravity="center"
+        android:hint="@string/modifier_hint"
+        android:inputType="numberSigned"/>
 
     <EditText
         android:id="@+id/amountOfDice"
@@ -25,8 +52,20 @@
         android:layout_columnSpan="1"
         android:hint="@string/dice_hint"
         android:layout_columnWeight="1"
-        android:layout_row="0"/>
+        android:layout_column="1"
+        android:layout_row="1"
+        android:gravity="center"
+        android:inputType="number"/>
 
+    <TextView
+        android:id="@+id/sidesOnDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_columnWeight="1"
+        android:text="@string/dice_sides"
+        android:gravity="center"/>
     <Spinner
         android:id="@+id/typeOfDice"
         android:layout_width="wrap_content"

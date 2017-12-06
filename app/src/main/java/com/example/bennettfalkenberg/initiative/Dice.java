@@ -39,13 +39,13 @@ public class Dice {
         this.numDice = numDice;
     }
 
-    public int rollDice() {
+    public int rollDice(int modifier) {
         int result = 0;
         Random random = new Random();
         for (int i = 0; i < numDice; i++) {
             sideUp = random.nextInt(numSides) + 1;
             result += sideUp;
         }
-        return result;
+        return result + modifier;
     }
 }

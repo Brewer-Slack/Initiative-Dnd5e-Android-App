@@ -19,4 +19,8 @@
     <string name="current_character">Current Character</string>
     <string name="inventory">Inventory</string>
     <string name="class_name">Class</string>
+    <string name="modifier">Modifiers</string>
+    <string name="dice_amount">Amount of Dice</string>
+    <string name="dice_sides">Sides on Dice</string>
+    <string name="modifier_hint">+/- a number</string>
 </resources>

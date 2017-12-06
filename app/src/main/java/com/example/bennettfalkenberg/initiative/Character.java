@@ -18,6 +18,8 @@ public class Character {
     private int charisma;
     private String alignment;
     private ArrayList<String> inventory;
+    private ArrayList<String> skills;
+    private ArrayList<String> savingThrows;
     private String charClass;
     private String race;
 
@@ -31,13 +33,18 @@ public class Character {
         charisma = 8;
         alignment = "Lawful Good";
         inventory = new ArrayList<>();
+        skills = new ArrayList<>();
+        savingThrows = new ArrayList<>();
+        inventory.add("bow");
+        skills.add("fireball");
+        savingThrows.add("Strength");
         charClass = "Ranger";
         race = "Human";
     }
 
     public Character(String name, int strength, int dexterity, int constitution, int intelligence,
                      int wisdom, int charisma, String alignment, ArrayList<String> inventory,
-                     String charClass, String race) {
+                     ArrayList<String> skills, ArrayList<String> savingThrows, String charClass, String race) {
         this.name = name;
         this.strength = strength;
         this.dexterity = dexterity;
@@ -47,6 +54,8 @@ public class Character {
         this.charisma = charisma;
         this.alignment = alignment;
         this.inventory = inventory;
+        this.skills = skills;
+        this.savingThrows = savingThrows;
         this.charClass = charClass;
         this.race = race;
     }
@@ -94,6 +103,14 @@ public class Character {
     public int getWisdom() {return wisdom;}
 
     public void setWisdom(int wisdom) {this.wisdom = wisdom;}
+
+    public ArrayList<String> getSkills() {return skills;}
+
+    public void setSkills(ArrayList<String> skills) {this.skills = skills;}
+
+    public ArrayList<String> getSavingThrows() {return savingThrows;}
+
+    public void setSavingThrows(ArrayList<String> savingThrows) {this.savingThrows = savingThrows;}
 
     @Override
     public String toString() {

@@ -86,7 +86,7 @@ public class CharacterActivity extends AppCompatActivity {
 
         for (int i = 0; i < 6; i++){
             // set each individual data value
-            textViewArrayList.get(i).setText(Integer.toString(dice.rollDice()));
+            textViewArrayList.get(i).setText(Integer.toString(dice.rollDice(0)));
         }
         // set roll button to be invisible
         Button rollStatsButton = (Button) findViewById(R.id.statsButton);
