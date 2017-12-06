@@ -18,7 +18,7 @@
         android:layout_rowSpan="1"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:padding="5dp"/>
+        android:padding="5dp" />
     <Spinner
         android:id="@+id/classSpinner"
         android:layout_width="0dp"
@@ -29,7 +29,8 @@
         android:layout_rowSpan="1"
         android:layout_columnWeight="1"
         android:layout_rowWeight="4"
-        android:padding="5dp"/>
+        android:padding="5dp" />
+
     <EditText
         android:id="@+id/playerName"
         android:layout_width="0dp"
@@ -44,7 +45,7 @@
         android:padding="5dp"/>
     <Spinner
         android:id="@+id/alignmentSpinner"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_column="2"
         android:layout_row="1"
@@ -119,9 +120,10 @@
         android:layout_rowSpan="4"
         android:layout_rowWeight="4"
         android:layout_columnWeight="1"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:gravity="top|center"/>
 
-    <EditText
+    <TextView
         android:id="@+id/skillsValue"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -131,7 +133,7 @@
         android:layout_row="3"
         android:layout_rowSpan="4"
         android:layout_rowWeight="4"
-        android:gravity="top|left"
+        android:gravity="top|center"
         android:padding="5dp" />
     <TextView
         android:id="@+id/dexterityLabel"
@@ -198,17 +200,17 @@
         android:gravity="center"
         android:padding="5dp"/>
 
-    <EditText
+    <TextView
         android:id="@+id/equipmentValue"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_column="1"
         android:layout_columnSpan="2"
         android:layout_columnWeight="4"
         android:layout_row="8"
         android:layout_rowSpan="5"
         android:layout_rowWeight="1"
-        android:gravity="top|left" />
+        android:gravity="top|center" />
     <TextView
         android:id="@+id/intelligenceLabel"
         android:layout_row="8"
