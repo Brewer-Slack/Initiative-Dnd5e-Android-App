@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Initiative-master.iml" filepath="$PROJECT_DIR$/Initiative-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Initiative-Dnd5e-Android-App.iml" filepath="$PROJECT_DIR$/.idea/Initiative-Dnd5e-Android-App.iml" />
+      <module fileurl="file://C:\Users\BJayB\AndroidStudioProjects\Initiative-Dnd5e-Android-App\Initiative-master.iml" filepath="C:\Users\BJayB\AndroidStudioProjects\Initiative-Dnd5e-Android-App\Initiative-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\BJayB\AndroidStudioProjects\Initiative-Dnd5e-Android-App\app\app.iml" filepath="C:\Users\BJayB\AndroidStudioProjects\Initiative-Dnd5e-Android-App\app\app.iml" />
     </modules>
   </component>
 </project>
